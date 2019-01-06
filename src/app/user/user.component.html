@@ -1,0 +1,39 @@
+<div class="panel container  panel-primary border" *ngFor="let user of users">
+  <div class="panel-heading">
+    <h3 class="panel-title ">{{ user.name }}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="col-sm-10 row ">
+      <div class="col-sm-4">
+        <img [src]="user.photoPath" class="imageFullSize" />
+      </div>
+      <div class="col-sm-8 row">
+        <div class="col-sm-12 row">
+          <div class="col-sm-6">
+            name
+          </div>
+          <div class="col-sm-6 ">
+            <span class="pl-6">: {{ user.name }} </span>
+          </div>
+        </div>
+        <div class="col-sm-12 row">
+          <div class="col-sm-6">
+            gender
+          </div>
+          <div class="col-sm-6">
+            : {{ user.gender }}
+          </div>
+        </div>
+        <div class="col-sm-12 row">
+          <div class="col-sm-6">
+            Mobile Number
+          </div>
+          <div class="col-sm-6">
+            : {{ user.phoneNumber }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
